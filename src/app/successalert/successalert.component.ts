@@ -4,7 +4,9 @@ import { Component } from "@angular/core";
     selector: 'app-successalert',
     templateUrl: './successalert.component.html',
     styles: [`h1{
-        color:green;
+        padding:20px;
+        border : 1 px solid green;
+        background-color:palegreen;
     }`],
 })
 export class successalert {
