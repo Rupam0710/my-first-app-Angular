@@ -5,9 +5,19 @@ import { Component } from '@angular/core';
   // selector: 'app-servers', //element selector
   // selector: '[app-servers]', //attribute selector
   // selector: '.app-servers', //class selector
-  template: `<app-server></app-server><app-server></app-server>`,
+  // template: `<app-server></app-server><app-server></app-server>`,
+  templateUrl: './servers.component.html',
   styleUrl: './servers.component.css'
 })
 export class ServersComponent {
+
+  allowNewServer = false;
+
+  constructor() {
+    setTimeout(() => {
+      this.allowNewServer = true;
+
+    }, 2000);
+  }
 
 }
