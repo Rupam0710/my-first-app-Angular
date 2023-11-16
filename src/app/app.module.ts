@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ServersComponent } from './servers/servers.component';
     ServersComponent,
     successalert,
     warningalert,
+    DataBindingComponent,
   ],
   imports: [
     BrowserModule,
