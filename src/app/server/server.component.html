@@ -1,5 +1,8 @@
 <!-- string interpolation with function -->
-<p [ngStyle]="{ backgroundColor: getColor() }">
+<p
+  [ngStyle]="{ backgroundColor: getColor() }"
+  [ngClass]="{ online: serverStatus === 'online' }"
+>
   {{ "Server" }} with ID {{ serverID }} is {{ getServerStatus() }}
 </p>
 
