@@ -14,6 +14,7 @@ export class DirectivesAssignmentComponent {
 
   Displaydetails() {
     this.showSecret = !this.showSecret;
-    this.detailsEntered.push(this.detailsEntered.length + 1);
+    // this.detailsEntered.push(this.detailsEntered.length + 1);
+    this.detailsEntered.push(new Date());
   }
 }
