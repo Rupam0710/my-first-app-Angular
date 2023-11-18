@@ -1,5 +1,7 @@
 <!-- string interpolation with function -->
-<p>{{ "Server" }} with ID {{ serverID }} is {{ getServerStatus() }}</p>
+<p [ngStyle]="{ backgroundColor: getColor() }">
+  {{ "Server" }} with ID {{ serverID }} is {{ getServerStatus() }}
+</p>
 
 <!-- It works directly if we pass the value in double curly braces ->string interpolation -->
 <!-- <p>{{ "Server" }} with ID {{ serverID }} is {{ serverStatus }}</p> -->
